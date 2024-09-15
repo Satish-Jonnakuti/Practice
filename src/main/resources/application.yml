@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/satish
+    username: root
+    password: Satish@1432
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update  # Can be 'update', 'create', 'create-drop', or 'validate' based on your needs
+    show-sql: true       # This will print SQL queries to the console
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+server:
+  port: 8080  
